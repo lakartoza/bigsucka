@@ -1,9 +1,13 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld />
+    <p>
+      From those who love you most,
+    </p>
+    <img id="signature" alt="lovely pic" src="./assets/girl.jpg">
   </div>
 </template>
+
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
@@ -19,10 +23,19 @@ export default {
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
+
+  background-image: url("./assets/sleds.png");
+  background-repeat: repeat;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding-top: 60px;
 }
+
+#signature {
+  width: 100%
+}
+
 </style>
